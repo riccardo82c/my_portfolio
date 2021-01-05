@@ -38,6 +38,7 @@ h1::after {
 
 
 /* end chevron */
+
 h2 {
 	font-size: 3em;
 	font-weight: 600;
@@ -123,14 +124,26 @@ h3:after {
 	margin-bottom: 18px;
 }
 
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	border-radius: 1px;
+}
+
 .icon-bar-group {
 	display: inline-block;
 	position: relative;
-
 }
+
+
 
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: var(--light);
+}
+
+.icon-bar-group:hover .icon-bar {
+	background-color: var(--special);
 }
 
 .navbar-toggle .menu {
@@ -186,7 +199,7 @@ header,
 }
 
 .banner-title h1 {
-	font-size: 60px;
+	font-size: 40px;
 	font-weight: 600;
 	text-transform: capitalize;
 }
@@ -303,9 +316,14 @@ section .star {
 	text-align: left;
 }
 
-.about p {
-	margin-top: 20px;
+.about ul {
+	margin-bottom: 30px;
 }
+
+
+/* .about p {
+	margin-top: 20px;
+} */
 
 
 .about .row:first-child {
@@ -505,4 +523,16 @@ footer {
 	.btn-container {
 		text-align: left;
 	}
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.banner-title h1 {
+		font-size: 60px;
+
+	}
+
 }
